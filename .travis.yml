@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t islamgamal88/dr -f Dovkerfile.dev .
+  - docker build -t islamgamal88/dr -f Dockerfile.dev .
 
 scripts:
   - docker run -e CI=true islamgamal88/dr npm run test -- --coverage
